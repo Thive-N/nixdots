@@ -4,7 +4,7 @@
 <h1 align = center><b>❄️ NixOS dotfiles ❄️</b></h1>
 <h2 align="center">My NixOS system configuration.</h2>
 
-- Rebuild and switch to change the system configuration (in the configuration directory):
+-   Rebuild and switch to change the system configuration (in the configuration directory):
 
 ```
 rebuild
@@ -16,7 +16,7 @@ OR
 sudo nixos-rebuild switch --flake '.#desktop'
 ```
 
-- Connect to internet.
+-   Connect to internet.
 
 ```
 iwctl --passphrase [passphrase] station [device] connect [SSID]
@@ -24,7 +24,7 @@ iwctl --passphrase [passphrase] station [device] connect [SSID]
 
 ## Installation
 
-Clono the repo and cd into it:
+Clone the repo and cd into it:
 
 ```bash
 git clone https://github.com/Thive-N/nixdots ~/flake && cd ~/flake
@@ -53,6 +53,7 @@ edit
 flake.nix
 home/desktop/terminal/shell/tools/git.nix
 home/desktop/home.nix
+home\desktop\services\wayland\waybar\scripts\power-menu\powermenu.sh
 ```
 
 to match your username and git profile
