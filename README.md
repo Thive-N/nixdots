@@ -53,7 +53,7 @@ edit
 flake.nix
 home/desktop/terminal/shell/tools/git.nix
 home/desktop/home.nix
-home\desktop\services\wayland\waybar\scripts\power-menu\powermenu.sh
+home/desktop/services/wayland/waybar/scripts/power-menu/powermenu.sh
 ```
 
 to match your username and git profile
