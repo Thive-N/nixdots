@@ -7,12 +7,6 @@
 -   Rebuild and switch to change the system configuration (in the configuration directory):
 
 ```
-rebuild
-```
-
-OR
-
-```
 sudo nixos-rebuild switch --flake '.#desktop'
 ```
 
