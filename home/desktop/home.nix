@@ -1,52 +1,36 @@
-{ inputs, config, nix-colors, pkgs, ... }: {
+{
+  inputs,
+  config,
+  pkgs,
+  ...
+}: {
+  # Home Manager needs a bit of information about you and the
+  # paths it should manage.
   home = {
-    username = "USERNAME";
-    homeDirectory = "/home/" + home.username;
+    username = "thivejan";
+    homeDirectory = "/home/thivejan";
     stateVersion = "22.11";
   };
 
+  imports = [
+    ./graphical
+  ];
+  # This value determines the Home Manager release that your
+  # configuration is compatible with. This helps avoid breakage
+  # when a new Home Manager release introduces backwards
+  # incompatible changes.
+  #
+  # You can update Home Manager without changing this value. See
+  # the Home Manager release notes for a list of state version
+  # changes in each release.
+
+  # Let Home Manager install and manage itself.
   programs = {
     home-manager.enable = true;
   };
 
-  # Imports
-  imports = [
-    ./dev
-    ./system
-    ./themes
-    ./services
-    ./terminal
-    ./graphical
-  ];
-
-  # Overlays
-  nixpkgs.overlays = [
-    (self: super: {
-      discord = super.discord.overrideAttrs (
-        _: {
-          src = builtins.fetchTarball {
-            url = "https://discord.com/api/download?platform=linux&format=tar.gz";
-          };
-        }
-      );
-    })
-    (import (builtins.fetchTarball {
-      url = "https://github.com/nix-community/neovim-nightly-overlay/archive/master.tar.gz";
-    }))
-  ];
-
-    # Add NUR
-  nixpkgs.config.packageOverrides = pkgs: {
-    nur =
-      import
-      (builtins.fetchTarball {
-        url = "https://github.com/nix-community/NUR/archive/master.tar.gz";
-        sha256 = "sha256:00g8l9ayyccqhs73zcjdbb0nw5bgljhqhmimykrl75p0ww7ha6cn";
-      })
-      {inherit pkgs;};
-  };
-
   nixpkgs.config.allowUnfreePredicate = pkg: true;
+
   fonts.fontconfig.enable = true;
 
   # Add support for .local/bin

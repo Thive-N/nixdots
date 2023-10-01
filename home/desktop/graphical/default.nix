@@ -1,6 +1,5 @@
 _: {
   imports = [
-    ./launchers
-    ./wms
+    ./hyprland
   ];
 }

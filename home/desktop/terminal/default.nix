@@ -1,8 +1,6 @@
 _: {
   imports = [
-    ./cava
-    ./kitty
-    ./shell
+    ./alacritty
     ./neofetch
   ];
 }
