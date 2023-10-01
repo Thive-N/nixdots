@@ -31,11 +31,9 @@
               home-manager.useUserPackages = true;
               home-manager.users.thivejan = ./home/desktop/home.nix;
             }
-
             hyprland.nixosModules.default {
               programs.hyprland.enable = true;
             }
-
           ];
         };
       };
