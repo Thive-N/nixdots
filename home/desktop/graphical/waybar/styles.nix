@@ -15,15 +15,15 @@ _: ''
   #window,
   #cpu,
   #memory,
-  #custom-arch {
+  #custom-media {
     background-color:  #1e1e2e;
     margin-top: 2px;
     margin-bottom: 0px;
     padding: 3px;
   }
 
-  #custom-arch,
-  #window {
+  #window,
+  #custom-media {
   border: 2px solid #9999CC ;
   border-radius: 10px 10px 10px 10px;
   }
@@ -59,18 +59,13 @@ _: ''
   #clock {
     border-radius: 0px 10px 10px 0px
   }
-  
-  #custom-arch {
-    font-size: 16px;
-    margin-left: 3px;
-    margin-right: 3px 
-  }
 
   #clock {
     font-weight: bold;
     margin-right: 3px;
   }
-  #window {
+  #window,
+  #custom-media {
   font-weight: bold;
   border-radius: 10px 10px 10px 10px;
   padding-left: 7px;

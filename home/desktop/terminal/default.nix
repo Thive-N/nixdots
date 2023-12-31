@@ -1,5 +1,5 @@
 { config, lib, pkgs, ... }: {
-  home.packages = [pkgs.neofetch pkgs.eza pkgs.grim pkgs.slurp pkgs.btop];
+  home.packages = with pkgs; [neofetch eza grim slurp btop playerctl];
 
   programs.fish = {
     enable = true;
@@ -23,6 +23,4 @@
       set number relativenumber
     '';
   };
-
-
 }

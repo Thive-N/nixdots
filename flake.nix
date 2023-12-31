@@ -39,14 +39,5 @@
           ];
         };
       };
-      #home-manager = {
-      #  desktop = home-manager.lib.homeManagerConfiguration {
-      #    inherit system pkgs;
-      #    username = "thivejan";
-      #    homeDirectory = "/home/thivejan";
-      #    configurations = {
-      #      import [ ./home.nix ]
-      #    };
-      #  }; 
     };    
 }

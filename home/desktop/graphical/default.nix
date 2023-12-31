@@ -1,6 +1,7 @@
 _: {
     imports = [
         ./waybar
+        ./kitty
         ./hyprland.nix
         ./firefox.nix
         ./wofi.nix

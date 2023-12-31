@@ -1,4 +1,5 @@
 { inputs, config, pkgs, osConfig, lib, ... } : {
+  home.packages = with pkgs; [ swww ];
   wayland.windowManager.hyprland = {
     enable = true;
     systemdIntegration = true;
@@ -14,7 +15,7 @@
 
     # Autostart
     exec = pkill waybar & sleep 0.5 && waybar
-    # exec-once = wallpaper_random
+    exec-once = swww init && swww img ~/Pictures/wallpapers/1.jpg
 
     # Set en layout at startup
 
@@ -75,7 +76,7 @@
     bind = $mainMod, G, fullscreen,
 
 
-    bind = $mainMod, RETURN, exec, alacritty
+    bind = $mainMod, RETURN, exec, kitty
     bind = $mainMod SHIFT, Q, killactive,
     bind = $mainMod SHIFT, M, exit,
     bind = $mainMod, V, togglefloating,
