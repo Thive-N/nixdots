@@ -7,5 +7,6 @@ _: {
         ./yuzu.nix
         ./vscode.nix
         ./gitkraken.nix
+        ./discord.nix
     ];
 }

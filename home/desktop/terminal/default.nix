@@ -1,11 +1,12 @@
 { config, lib, pkgs, ... }: {
-  home.packages = [pkgs.neofetch pkgs.eza];
+  home.packages = [pkgs.neofetch pkgs.eza pkgs.grim pkgs.slurp pkgs.btop];
 
   programs.fish = {
     enable = true;
     interactiveShellInit = '''';
     shellAliases = {
       ls = "eza -la";
+      snrs = "sudo nixos-rebuild switch --flake .#desktop";
     }; 
   };
 
