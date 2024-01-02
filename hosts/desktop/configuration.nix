@@ -69,7 +69,7 @@
   users.users.thivejan = {
     shell = pkgs.fish;
     isNormalUser = true;
-    extraGroups = [ "networkmanager" "wheel" "libvirtd"];
+    extraGroups = [ "networkmanager" "wheel" "libvirtd" "docker"];
   };
 
   programs = {
@@ -77,6 +77,13 @@
     steam.enable = true;
   };
   
+  services.pcscd.enable = true;
+  programs.gnupg.agent = {
+    enable = true;
+    pinentryFlavor = "curses";
+    enableSSHSupport = true;
+  };
+
   nixpkgs.config.allowUnfree = true;
   virtualisation.docker.rootless = {
     enable = true;
