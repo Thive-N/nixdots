@@ -10,8 +10,9 @@
     # vscode-extensions.vadimcn.vscode-lldb # Debugger
     # uncrustify # Source code beautifier for C, C++, C#, ObjectiveC, D, Java, Pawn and VALA
     
-    gcc # GNU Compiler Collection
     beautysh # Shell formatter
     gnupatch
+    lld
+    clang
   ];
 }
