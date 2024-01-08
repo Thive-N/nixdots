@@ -1,5 +1,12 @@
 { config, lib, pkgs, ... }: {
-  home.packages = with pkgs; [neofetch eza grim slurp btop playerctl];
+  home.packages = with pkgs; [
+    neofetch  
+    eza 
+    grim 
+    slurp 
+    btop 
+    playerctl 
+];
 
   programs.fish = {
     enable = true;

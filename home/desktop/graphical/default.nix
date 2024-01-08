@@ -9,5 +9,8 @@ _: {
         ./vscode.nix
         ./gitkraken.nix
         ./discord.nix
+        ./jetbrains.nix
+        ./keepass.nix
+        ./obs.nix
     ];
 }

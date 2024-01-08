@@ -7,7 +7,6 @@
     nodejs
     node2nix
     typescript
-    tailwindcss
     nodePackages.npm # Package manager
     nodePackages_latest.pnpm
     nodePackages_latest.ts-node

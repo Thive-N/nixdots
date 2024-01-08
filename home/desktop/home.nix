@@ -13,6 +13,7 @@
   };
 
   imports = [
+    ./dev
     ./graphical
     ./terminal
     ./system

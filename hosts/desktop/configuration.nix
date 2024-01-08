@@ -75,6 +75,7 @@
   programs = {
     fish.enable = true;
     steam.enable = true;
+    java.enable = true;
   };
   
   services.pcscd.enable = true;
