@@ -8,6 +8,7 @@
         pynvim
         flake8 # Linter for Python
         pypresence # Discord Rich Presence
+        
       ]))
   ];
 }
