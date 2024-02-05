@@ -7,5 +7,7 @@ _: {
     ./grim.nix
     ./slurp.nix
     ./git.nix
+    ./cava.nix
+    ./btop.nix
   ];
 }

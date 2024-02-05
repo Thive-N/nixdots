@@ -12,6 +12,7 @@
     ./terminal
     ./dev
     ./graphical
+    ./system
   ];
 
   # This value determines the Home Manager release that your

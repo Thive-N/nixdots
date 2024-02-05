@@ -78,12 +78,6 @@
     isNormalUser = true;
     description = "Thivejan Neranjan";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-      neovim
-      btop
-      cava
-      swww
-    ];
   };
 
   # Allow unfree packages
