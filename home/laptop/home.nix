@@ -8,9 +8,10 @@
   };
 
   imports = [
-    # ./services
+    ./services
     ./terminal
     ./dev
+    ./graphical
   ];
 
   # This value determines the Home Manager release that your

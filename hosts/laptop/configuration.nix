@@ -39,8 +39,7 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
-  # Enable the KDE Plasma Desktop Environment.
-  programs.hyprland.enable = true;
+  services.xserver.displayManager.sddm.enable = true;
   # Configure keymap in X11
   services.xserver = {
     layout = "gb";
@@ -72,7 +71,7 @@
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
-  nixpkgs.config.permittedInsecurePackages = ["electron-24.8.6"];
+  nixpkgs.config.permittedInsecurePackages = ["electron-25.9.0"];
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.thivejan = {
     shell = pkgs.fish;
@@ -80,22 +79,15 @@
     description = "Thivejan Neranjan";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
-      discord
-      obsidian
-      eza
-      fish
       neovim
-      neofetch
       btop
-      discord
       cava
-      polybar
+      swww
     ];
   };
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
-
   programs.fish = {
     enable = true;
     interactiveShellInit = ''
