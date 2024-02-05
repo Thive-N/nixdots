@@ -1,7 +1,6 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
-    cargo
-    rustfmt
-    direnv
+    logmein-hamachi
+    haguichi
   ];
 }

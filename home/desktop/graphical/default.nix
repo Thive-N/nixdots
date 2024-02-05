@@ -12,5 +12,8 @@ _: {
         ./jetbrains.nix
         ./keepass.nix
         ./obs.nix
+        ./obsidian.nix
+        ./easyfx.nix
+        # ./hamachi.nix
     ];
 }

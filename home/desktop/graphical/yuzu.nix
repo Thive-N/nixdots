@@ -1,3 +1,3 @@
 {pkgs, ...}: {
-    home.packages = [pkgs.yuzu-mainline];  
+    home.packages = [pkgs.yuzu-early-access];  
 }

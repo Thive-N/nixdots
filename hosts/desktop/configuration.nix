@@ -76,8 +76,13 @@
     fish.enable = true;
     steam.enable = true;
     java.enable = true;
+    haguichi.enable = true;
   };
-  
+
+  services = {
+    logmein-hamachi.enable = true;
+  };
+
   services.pcscd.enable = true;
   programs.gnupg.agent = {
     enable = true;
