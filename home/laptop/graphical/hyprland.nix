@@ -2,7 +2,7 @@
   home.packages = with pkgs; [ swww ];
   wayland.windowManager.hyprland = {
     enable = true;
-    systemdIntegration = true;
+    systemd.enable = true;
     extraConfig = ''
 
     # Monitor
