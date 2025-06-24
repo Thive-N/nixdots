@@ -12,7 +12,6 @@
 
     shellAbbrs = {
       ls = "eza -la";
-      snrs = "sudo nixos-rebuild switch";
     };
-  }
+  };
 }

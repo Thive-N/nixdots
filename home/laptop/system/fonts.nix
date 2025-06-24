@@ -1,6 +1,6 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
-    nerdfix # Fix obsolete nerd font icons
+    nerdfix
     noto-fonts
     dejavu_fonts
     font-awesome

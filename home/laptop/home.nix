@@ -8,7 +8,7 @@
   };
 
   imports = [
-    ./services
+    ./packages.nix
     ./terminal
     ./dev
     ./graphical
