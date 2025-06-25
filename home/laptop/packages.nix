@@ -26,11 +26,7 @@
     obs-studio
     grim
     slurp
-    ffmpeg_5
     wl-clipboard
-
-    # Minecraft
-    minecraft
 
     # Audio/Music
     spotify
