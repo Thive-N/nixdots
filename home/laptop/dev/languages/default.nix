@@ -8,17 +8,17 @@
     jdk8
 
     # python
-    poetry
-    (python311.withPackages ( ps:
-      with ps; [
-        pip
-        black # Python formatter
-        pynvim
-        flake8 # Linter for Python
-        pypresence # Discord Rich Presence
-        jupyter # notebook
-        numpy # math library
-      ]))
+    # poetry
+    # (python311.withPackages ( ps:
+    #   with ps; [
+    #     pip
+    #     black # Python formatter
+    #     pynvim
+    #     flake8 # Linter for Python
+    #     pypresence # Discord Rich Presence
+    #     jupyter # notebook
+    #     numpy # math library
+    #   ]))
     
     # nix
     alejandra
