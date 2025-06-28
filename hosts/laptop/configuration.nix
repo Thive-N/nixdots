@@ -46,7 +46,7 @@
   console.keyMap = "uk";
 
   # Enable sound with pipewire.
-  hardware.pulseaudio.enable = false;
+  services.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
@@ -60,6 +60,8 @@
   hardware.bluetooth.powerOnBoot = true;
   nixpkgs.config.allowUnfree = true;
   
+  fonts.packages = with pkgs; [ nerd-fonts.space-mono ];
+
   nixpkgs.config.permittedInsecurePackages = [ "electron-25.9.0" ];
         nixpkgs.config.packageOverrides = pkgs: {
           nur = import (builtins.fetchTarball "https://github.com/nix-community/NUR/archive/main.tar.gz") {
