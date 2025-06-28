@@ -30,8 +30,6 @@
     home-manager.enable = true;
   };
 
-  nixpkgs.config.allowUnfreePredicate = pkg: true;
-
   fonts.fontconfig.enable = true;
 
   # Add support for .local/bin

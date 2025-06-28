@@ -63,11 +63,7 @@
   fonts.packages = with pkgs; [ nerd-fonts.space-mono ];
 
   nixpkgs.config.permittedInsecurePackages = [ "electron-25.9.0" ];
-        nixpkgs.config.packageOverrides = pkgs: {
-          nur = import (builtins.fetchTarball "https://github.com/nix-community/NUR/archive/main.tar.gz") {
-            inherit pkgs;
-          };
-        };
+
 
   # Define a user account.
   users.users.thivejan = {
