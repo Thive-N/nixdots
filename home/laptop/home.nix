@@ -8,12 +8,8 @@
   };
 
   imports = [
-    ./packages.nix
-    ./terminal
+    ./base
     ./dev
-    ./graphical
-    ./system
-    ./services
   ];
 
   # This value determines the Home Manager release that your
