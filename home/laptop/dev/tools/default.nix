@@ -2,6 +2,7 @@
   imports = [
     ./editors.nix
     # ./docker.nix
+    ./kitty
     ./virt-manager.nix
   ];
   home.packages = with pkgs; [
