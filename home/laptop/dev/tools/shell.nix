@@ -3,17 +3,18 @@
   pkgs,
   lib,
   ...
-}: {
+}:
+{
   # ls replacement
   programs.eza = {
     enable = true;
   };
-  
+
   # terminal
   programs.alacritty = {
     enable = true;
     settings = {
-    	font.size = 11;
+      font.size = 11;
     };
   };
 
@@ -30,11 +31,12 @@
 
     shellAbbrs = {
       ls = "eza -la";
+      sl = "ls";
     };
   };
 
   home.packages = with pkgs; [
     btop
     cava
-];
+  ];
 }

@@ -1,14 +1,19 @@
-{ config, pkgs, lib, ... }:
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}:
 {
   programs.neovim.enable = true;
   programs.neovim.viAlias = true;
   programs.neovim.vimAlias = true;
 
   programs.vscode = {
-  enable = true;
-  profiles.default.extensions = with pkgs.vscode-extensions; [
-    dracula-theme.theme-dracula
-    yzhang.markdown-all-in-one
-  ];
-};
+    enable = true;
+    profiles.default.extensions = with pkgs.vscode-extensions; [
+      dracula-theme.theme-dracula
+      yzhang.markdown-all-in-one
+    ];
+  };
 }

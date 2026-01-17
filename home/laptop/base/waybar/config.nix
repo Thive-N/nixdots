@@ -4,8 +4,11 @@ _: {
     position = "top";
     mod = "dock";
     # height = 10;
-    modules-left = ["hyprland/workspaces" "hyprland/window"];
-    modules-center = ["custom/media"];
+    modules-left = [
+      "hyprland/workspaces"
+      "hyprland/window"
+    ];
+    modules-center = [ "custom/media" ];
     modules-right = [
       "cpu"
       "memory"
@@ -15,10 +18,10 @@ _: {
 
     "hyprland/workspaces" = {
       "persistent-workspaces" = {
-        "1" = ["DP-3"];
-        "2" = ["DP-3"];
-        "3" = ["DP-3"];
-        "4" = ["DP-3"];
+        "1" = [ "DP-3" ];
+        "2" = [ "DP-3" ];
+        "3" = [ "DP-3" ];
+        "4" = [ "DP-3" ];
       };
       active-only = "false";
       on-scroll-up = "hyprctl dispatch workspace e+1";
@@ -89,12 +92,15 @@ _: {
         phone = " ";
         portable = " ";
         car = " ";
-        default = [" " " " " "];
+        default = [
+          " "
+          " "
+          " "
+        ];
       };
       tooltip-format = "{desc} {volume}%";
       on-click = "pavucontrol";
     };
-
 
     "custom/wmname" = {
       format = "";

@@ -28,7 +28,7 @@ _: ''
   border-radius: 10px 10px 10px 10px;
   }
 
-  
+
   #workspaces {
   border: 2px solid #9999CC ;
   color: #eeeeef;

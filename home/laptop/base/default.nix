@@ -1,8 +1,8 @@
 _: {
-    imports = [
-        ./waybar
-        ./hyprland.nix
-        ./packages.nix
-        ./wofi.nix
-    ];
+  imports = [
+    ./waybar
+    ./hyprland.nix
+    ./packages.nix
+    ./wofi.nix
+  ];
 }

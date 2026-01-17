@@ -1,4 +1,5 @@
-{pkgs, ...}: {
+{ pkgs, ... }:
+{
   home.packages = with pkgs; [
     # c
     gcc
@@ -7,25 +8,23 @@
     # java
     jdk8
 
-    # python
-    # poetry
-    # (python311.withPackages ( ps:
-    #   with ps; [
-    #     pip
-    #     black # Python formatter
-    #     pynvim
-    #     flake8 # Linter for Python
-    #     pypresence # Discord Rich Presence
-    #     jupyter # notebook
-    #     numpy # math library
-    #   ]))
-    
+    (python3.withPackages (
+      python-pkgs: with python-pkgs; [
+        pandas
+        requests
+        numpy
+        bokeh
+        matplotlib
+      ]
+    ))
+
     # nix
     alejandra
     statix
     nil
     nix-init
     nix-prefetch-git
+    claude-code
 
     # rust
     lldb
@@ -35,7 +34,6 @@
     rust-analyzer
 
     # js/ts
-    nodejs
     node2nix
     typescript
     tailwindcss
@@ -44,6 +42,5 @@
     nodePackages_latest.prettier
     nodePackages_latest.typescript-language-server
 
-    
   ];
 }

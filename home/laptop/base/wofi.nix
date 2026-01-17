@@ -1,8 +1,14 @@
-{ config, lib, pkgs, ... } : 
+{
+  config,
+  lib,
+  pkgs,
+  ...
+}:
 let
   inherit (config.lib.formats.rasi) mkLiteral;
   colors = import ../../themes/colors.nix;
-in {
+in
+{
   home = {
     packages = with pkgs; [
       wofi

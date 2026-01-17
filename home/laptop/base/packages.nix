@@ -1,12 +1,23 @@
-{pkgs, ...}: {
-  programs.firefox = {
-    enable = true;
-  };
-  programs.vscode = {
-    enable = true;
+{ pkgs, ... }:
+{
+  programs = {
+    firefox.enable = true;
+    vscode.enable = true;
+    quickshell.enable = true;
   };
 
   home.packages = with pkgs; [
+    # blender
+    blender
+
+    # light
+    brightnessctl
+
+    # jellyfin
+    jellyfin
+    jellyfin-ffmpeg
+    jellyfin-web
+
     # git frontend
     gitkraken
 
@@ -22,7 +33,7 @@
     # Note taking
     obsidian
 
-    # Rice
+    # Plentiful fields of rice
     swww
     dunst
     bemenu
@@ -38,5 +49,11 @@
     spotify
     easyeffects
     pavucontrol
+
+    # 3D Terraria
+    lunar-client
+
+    # Ultimate hacking tool
+    protonvpn-gui
   ];
 }
