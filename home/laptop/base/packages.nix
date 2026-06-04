@@ -52,6 +52,7 @@
 
     # 3D Terraria
     lunar-client
+    prismlauncher
 
     # Ultimate hacking tool
     protonvpn-gui

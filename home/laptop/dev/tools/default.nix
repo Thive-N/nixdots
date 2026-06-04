@@ -16,12 +16,12 @@
     mpv
     file
     tree
-    light
     xclip
     unzip
     libnotify
     traceroute
     polkit_gnome
     networkmanager
+    nixd
   ];
 }
