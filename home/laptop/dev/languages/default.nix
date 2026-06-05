@@ -6,7 +6,7 @@
     binutils
 
     # java
-    jdk8
+    pkgs.javaPackages.compiler.temurin-bin.jdk-25
 
     (python3.withPackages (
       python-pkgs: with python-pkgs; [
@@ -24,7 +24,6 @@
     nil
     nix-init
     nix-prefetch-git
-    claude-code
 
     # rust
     lldb
@@ -32,15 +31,6 @@
     cargo
     rustfmt
     rust-analyzer
-
-    # js/ts
-    node2nix
-    typescript
-    tailwindcss
-    nodePackages.npm
-    nodePackages_latest.eslint_d
-    nodePackages_latest.prettier
-    nodePackages_latest.typescript-language-server
 
   ];
 }
