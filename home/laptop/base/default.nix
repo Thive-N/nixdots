@@ -57,6 +57,6 @@
     prismlauncher
 
     # Ultimate hacking tool
-    protonvpn-gui
+    proton-vpn
   ];
 }
