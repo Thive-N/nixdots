@@ -14,6 +14,7 @@
   programs.neovim.viAlias = true;
   programs.neovim.vimAlias = true;
   programs.neovim.withPython3 = true;
+  programs.neovim.withRuby = true;
 
   programs.vscode = {
     enable = true;
