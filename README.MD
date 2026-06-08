@@ -35,25 +35,16 @@ You can add or create your own output in flake.nix through the following templat
 ```nix
 nixosConfigurations = {
     #                                  Architecture   Hostname
-    desktop = nixpkgs.lib.nixosSystem  "x86_64-linux" "desktop";
-    # laptop = nixpkgs.lib.nixosSystem "x86_64-linux" "laptop";
+    laptop = nixpkgs.lib.nixosSystem  "x86_64-linux" "laptop";
+    # desktop = nixpkgs.lib.nixosSystem "x86_64-linux" "desktop";
 
 };
 ```
 
-edit
-
-```
-flake.nix
-home/desktop/terminal/shell/tools/git.nix
-home/desktop/home.nix
-home/desktop/services/wayland/waybar/scripts/power-menu/powermenu.sh
-```
-
-to match your username and git profile
+edit to match your username and git profile
 
 rebuild your configuration with:
 
 ```bash
-sudo nixos-rebuild switch --flake .#desktop
+sudo nixos-rebuild switch --flake .#laptop
 ```
