@@ -12,7 +12,6 @@
 
   programs = {
     firefox.enable = true;
-    vscode.enable = true;
     quickshell.enable = true;
   };
 
@@ -34,9 +33,6 @@
     # password manager
     keepassxc
 
-    # Browsers
-    firefox
-
     # Socials
     discord
 
@@ -44,9 +40,6 @@
     obsidian
 
     # Plentiful fields of rice
-    swww
-    dunst
-    bemenu
     cmatrix
 
     #Capture
@@ -61,7 +54,6 @@
     pavucontrol
 
     # 3D Terraria
-    lunar-client
     prismlauncher
 
     # Ultimate hacking tool

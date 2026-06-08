@@ -145,6 +145,7 @@
   };
 
   environment.systemPackages = with pkgs; [
+    #TODO: with pkgs.kdePackages
     nixfmt-rfc-style
     kdePackages.discover # Optional: Install if you use Flatpak or fwupd firmware update sevice
     kdePackages.kcalc # Calculator
@@ -161,6 +162,7 @@
     wayland-utils # Wayland utilities
     wl-clipboard # Command-line copy/paste utilities for Wayland
 
+    #TODO: Cleanup
     libvirt
     pciutils
     virt-manager

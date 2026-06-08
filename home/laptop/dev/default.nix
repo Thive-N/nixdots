@@ -6,10 +6,8 @@
 }:
 {
   imports = [
-    ./editors.nix
     ./shell.nix
     ./kitty
-    ./languages.nix
   ];
 
   programs.neovim.enable = true;
@@ -41,6 +39,38 @@
     polkit_gnome
     networkmanager
     nixd
+
+    # encryption
     cryptsetup
+
+    # system monitor
+    btop
+
+    #audio visualizer
+    cava
+
+    # task manager
+    screenfetch
+
+    # c
+    gcc
+    binutils
+
+    # java
+    pkgs.javaPackages.compiler.temurin-bin.jdk-25
+
+    # nix
+    alejandra
+    statix
+    nil
+    nix-init
+    nix-prefetch-git
+
+    # rust
+    lldb
+    rustc
+    cargo
+    rustfmt
+    rust-analyzer
   ];
 }
