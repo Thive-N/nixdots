@@ -7,7 +7,6 @@
 {
   imports = [
     ./shell.nix
-    ./kitty
   ];
 
   programs.neovim.enable = true;
