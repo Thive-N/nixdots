@@ -6,24 +6,65 @@
 }:
 {
   imports = [
-    ./shell.nix
+    ../profiles/shell.nix
+    ../profiles/vscode.nix
+    ../profiles/languages.nix
   ];
 
+  # TODO: remove?
   programs.neovim.enable = true;
   programs.neovim.viAlias = true;
   programs.neovim.vimAlias = true;
   programs.neovim.withPython3 = true;
   programs.neovim.withRuby = true;
 
-  programs.vscode = {
-    enable = true;
-    profiles.default.extensions = with pkgs.vscode-extensions; [
-      dracula-theme.theme-dracula
-      yzhang.markdown-all-in-one
-    ];
+
+
+  programs = {
+    quickshell.enable = true;
   };
 
   home.packages = with pkgs; [
+    # blender
+    blender
+
+    # light
+    brightnessctl
+
+    # jellyfin
+    jellyfin
+    jellyfin-ffmpeg
+    jellyfin-web
+
+    # password manager
+    keepassxc
+
+    # Socials
+    discord
+
+    # Note taking
+    obsidian
+
+    # Plentiful fields of rice
+    cmatrix
+
+    #Capture
+    obs-studio
+    grim
+    slurp
+    wl-clipboard
+
+    # Audio/Music
+    spotify
+    easyeffects
+    pavucontrol
+
+    # 3D Terraria
+    prismlauncher
+
+    # Ultimate hacking tool
+    proton-vpn
+
     qbittorrent-nox
     virt-manager
     gparted
@@ -66,12 +107,5 @@
     nil
     nix-init
     nix-prefetch-git
-
-    # rust
-    lldb
-    rustc
-    cargo
-    rustfmt
-    rust-analyzer
   ];
 }

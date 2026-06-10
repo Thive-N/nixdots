@@ -5,10 +5,6 @@
   ...
 }:
 {
-  imports = [
-    ./kitty
-  ];
-
   programs = {
     # ls replacement
     eza = {
