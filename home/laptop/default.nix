@@ -8,7 +8,10 @@
   imports = [
     ../profiles/shell.nix
     ../profiles/vscode.nix
-    ../profiles/languages.nix
+    ../profiles/languages/rust.nix
+    ../profiles/languages/c.nix
+    ../profiles/languages/nix.nix
+    ../profiles/languages/java.nix
   ];
 
   programs = {
@@ -76,27 +79,8 @@
     # encryption
     cryptsetup
 
-    # system monitor
     btop
-
-    #audio visualizer
     cava
-
-    # task manager
     screenfetch
-
-    # c
-    gcc
-    binutils
-
-    # java
-    pkgs.javaPackages.compiler.temurin-bin.jdk-25
-
-    # nix
-    alejandra
-    statix
-    nil
-    nix-init
-    nix-prefetch-git
   ];
 }
