@@ -10,12 +10,6 @@
 sudo nixos-rebuild switch --flake '.#desktop'
 ```
 
--   Connect to internet.
-
-```
-iwctl --passphrase [passphrase] station [device] connect [SSID]
-```
-
 ## Installation
 
 Clone the repo and cd into it:
