@@ -49,17 +49,12 @@
     wl-clipboard
 
     # Audio/Music
-    spotify
     easyeffects
     pavucontrol
 
     # 3D Terraria
     prismlauncher
 
-    # Ultimate hacking tool
-    proton-vpn
-
-    qbittorrent-nox
     virt-manager
     gparted
     git
